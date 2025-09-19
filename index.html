@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | testimonials grid section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,62 +16,102 @@
   </style>
 </head>
 <body>
-  Daniel Clifford
-  Verified Graduate
+    <div class="mx-auto align-center">
+    <div class="py-10 px-2 md:px-30 mx-auto max-w-screen-xl grid grid-flow-row md:grid-flow-col md:grid-rows-3 place-content-center gap-4">
+        <div class="md:col-span-3 ..."> 
+            <div class="grid md:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <figure class="md:col-span-2 relative flex flex-col p-6 bg-purple-700 rounded-lg shadow-xl/30 dark:bg-gray-800 dark:border-gray-700">
+                <div class="absolute top-10 right-10 z-0">
+                    <img src="/images/bg-pattern-quotation.svg" alt="quote">
+                </div>
+                <figcaption class="flex items-center justify-left z-10">
+                    <img class="rounded-full w-9 h-9" src="/images/image-daniel.jpg" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                        <div class="text-white">Daniel Clifford </div>
+                        <div class="text-sm text-white dark:text-gray-400 ">Verified Graduate </div>
+                    </div>
+                </figcaption> 
+                <blockquote class="max-w-2xl mt-2 mb-2 text-gray-500 lg:mb-8 dark:text-gray-400 z-10">
+                    <h3 class="text-lg font-semibold text-base leading-6 text-white dark:text-white">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth. </h3>
+                    <p class="my-1 text-white text-sm">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ” </p>
+                </blockquote>   
+            </figure>
 
-  I received a job offer mid-course, and the subjects I learned were current, if not more so, 
-  in the company I joined. I honestly feel I got every penny’s worth.
+            <!-- Card 2 -->
+            <figure class="flex flex-col p-6 bg-gray-500 rounded-lg shadow-xl/30 dark:bg-gray-800 dark:border-gray-700">
+            <figcaption class="flex items-center justify-left ">
+                <img class="rounded-full w-9 h-9" src="/images/image-jonathan.jpg" alt="profile picture">
+                <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                    <div class="text-white">Jonathan Walters </div>
+                    <div class="text-sm text-white dark:text-gray-400 ">Verified Graduate </div>
+                </div>
+            </figcaption> 
+            <blockquote class="max-w-2xl mt-2 mb-2 text-white lg:mb-8 dark:text-gray-400">
+                <h3 class="text-lg font-semibold text-base leading-6 text-white dark:text-white">The team was very supportive and kept me motivated </h3>
+                <p class="my-1 text-white text-sm">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ” </p>
+            </blockquote>   
+            </figure>
+            </div>
+        </div>
+        <div class="md:col-span-4 ...">
+            <div class="grid md:grid-cols-3 gap-4">
+                <!-- Card 3 -->
+                <figure class="flex flex-col p-6 bg-white rounded-lg shadow-xl/30 dark:bg-gray-800 dark:border-gray-700">
+                <figcaption class="flex items-center justify-left ">
+                    <img class="rounded-full w-9 h-9" src="/images/image-jeanette.jpg" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                        <div>Jeanette Harmon</div>
+                        <div class="text-sm dark:text-gray-400 ">Verified Graduate </div>
+                    </div>
+                </figcaption> 
+                <blockquote class="max-w-2xl mt-2 mb-2 lg:mb-8 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold text-base leading-6 dark:text-white">An overall wonderful and rewarding experience</h3>
+                    <p class="my-1 text-sm">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+                </blockquote>   
+                </figure>
 
-  “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
-  transition and have heard some people who had an amazing experience here. I signed up 
-  for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
-  The next 12 weeks was the best - and most grueling - time of my life. Since completing 
-  the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
-
-  Jonathan Walters
-  Verified Graduate
-
-  The team was very supportive and kept me motivated
-
-  “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-  for a big company. This was one of the best investments I’ve made in myself. ”
-
-  Jeanette Harmon
-  Verified Graduate
-
-  An overall wonderful and rewarding experience
-
-  “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
-  while doing something I love. ”
-
-  Patrick Abrams
-  Verified Graduate
-
-  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
-  learning from their experiences was easy.
-
-  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
-  gave me the confidence necessary to be able to go out in the world and present myself as a capable 
-  junior developer. The standard is above the rest. You will get the personal attention you need from 
-  an incredible community of smart and amazing people. ”
-
-  Kira Whittle
-  Verified Graduate
-
-  Such a life-changing experience. Highly recommended!
-
-  “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
-  professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
-  student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
-  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
-  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
-  could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
-  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
-  100% recommend! ”
+                <!-- Card 4 -->
+                <figure class="md:col-span-2 flex flex-col p-6 bg-gray-800 rounded-lg shadow-xl/30 dark:bg-gray-800 dark:border-gray-700">
+                <figcaption class="flex items-center justify-left ">
+                    <img class="rounded-full w-9 h-9" src="/images/image-patrick.jpg" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                        <div class="text-white">Patrick Abrams</div>
+                        <div class="text-sm text-white dark:text-gray-400 ">Verified Graduate </div>
+                    </div>
+                </figcaption> 
+                <blockquote class="max-w-2xl mt-2 mb-2 text-white lg:mb-8 dark:text-gray-400">
+                    <h3 class="text-lg font-semibold text-base leading-6 text-white dark:text-white">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy. </h3>
+                    <p class="my-1 text-sm">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ” </p>
+                </blockquote>   
+                </figure>
+            </div>
+        </div>
+        <!-- <div class="md:row-span-3 ..."> -->
+            <!-- Card 5 -->
+            <figure class="md:row-span-2 flex flex-col p-6 bg-white rounded-lg shadow-xl/30 dark:bg-gray-800 dark:border-gray-700">
+            <figcaption class="flex items-center justify-left ">
+                <img class="rounded-full w-9 h-9" src="/images/image-kira.jpg" alt="profile picture">
+                <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                    <div>Kira Whittle </div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400 ">Verified Graduate </div>
+                </div>
+            </figcaption> 
+            <blockquote class="max-w-2xl mt-2 mb-2 text-gray-500 lg:mb-8 dark:text-gray-400">
+                <h3 class="text-lg font-semibold text-base leading-6 text-gray-900 dark:text-white">Such a life-changing experience. Highly recommended!</h3>
+                <p class="my-1 text-sm">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+            </blockquote>   
+            </figure>
+        <!-- </div> -->
+    </div>
+        </div>
   
-  <div class="attribution">
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Husna</a>.
+    </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
 </html>
